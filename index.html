@@ -1,0 +1,33 @@
+<body>
+    <div class="container" data-position="1">
+        <div class="dolly"><a href="http://maluto.com" target="_parent" class="credit">maluto.com</a></div>
+        <div class="register">
+            <h1 class="register-heading">Register</h1>
+            <form method="post" id="form" action="http://maluto.com">
+                <label for="name">Your full name</label>
+                <input type="text" 
+                       name="name" 
+                       placeholder="John Edwards"  
+                       class="input-txt" data-pos="1" required/>
+                
+                <label for="password">Password (Phone Number)</label>
+                <input type="tel" 
+                       name="password" 
+                       placeholder="(+66)           " 
+                       pattern="\(\+66\) [0-9]{9}"
+                       class="input-txt" data-pos="2" required/>
+                
+                <label for="email">Your email</label>
+                <input type="email" 
+                       name="email" 
+                       placeholder="jonhymelave@cocoa.com" 
+                       minlength="5"
+                       class="input-txt" data-pos="3" required/>
+
+                <button type="submit">Send it baby!</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
